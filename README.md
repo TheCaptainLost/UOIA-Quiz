@@ -1,8 +1,6 @@
 # UOIA-Quiz
 Lern-Quiz für die Prüfung. Einfach und unkompliziert lernen von überall.
 
-# UOIA-Quiz – Nutzungshinweise
-
 Das UOIA-Quiz ist ein webbasiertes Lern-Tool für die Ausbildung im Bereich Umweltverwaltung.
 Aufruf erfolgt über:
 https://thecaptainlost.github.io/UOIA-Quiz/quiz_online.html
@@ -97,10 +95,64 @@ Mit „Frage zum Vorschlag-Pool hinzufügen“ speichern.
 
 Über „Vorschläge als CSV“ können alle Vorschläge als Datei heruntergeladen und später in den offiziellen Fragenpool übernommen werden.
 
-# 5. Wichtige Hinweise
+## Hinweise für Kolleginnen und Kollegen: Fragelisten und Bewertungen hochladen
 
-Es werden keine personenbezogenen Daten dauerhaft gespeichert.
+Damit wir das UOIA-Quiz gemeinsam verbessern können, gibt es im Repository zwei Ordner:
 
-Bewertungen und Vorschläge existieren nur im aktuellen Browser, bis jemand die CSV-Dateien herunterlädt.
+- `vorschlaege_neu` – hier werden **Vorschlags-Listen** für neue Fragen abgelegt  
+- `bewertungen_neu` – hier werden **Bewertungs-Listen** (Daumen hoch/Daumen runter) abgelegt  
 
-Die inhaltliche Pflege und Freigabe der Fragen erfolgt zentral (Fragenpool in Excel/CSV).
+Bitte geht wie folgt vor:
+
+---
+
+### 1. Neue Frageliste (Fragevorschläge) aus dem Quiz exportieren und hochladen
+
+1. Das Quiz im Browser öffnen:  
+   `https://thecaptainlost.github.io/UOIA-Quiz/quiz_online.html`
+2. Unten den Bereich **„Neue Frage vorschlagen / in den Pool aufnehmen“** öffnen.
+3. **Thema** auswählen (z. B. BImSchG, VwVfG, KrWG, WHG, Technologie, Sonstiges).
+4. **Fragentyp**, **Frage**, die vier Antworten **A–D**, richtige Antwort(en) und **Erläuterung** ausfüllen.  
+   - WICHTIG: Richtige Antwort(en) nur als **A, B, C oder D** angeben,  
+     bei mehreren mit Semikolon trennen, z. B. `A;C`.
+5. Mit **„Frage zum Vorschlag-Pool hinzufügen“** speichern.  
+   (Mehrere Fragen können nacheinander ergänzt werden.)
+6. Wenn alle Vorschläge eingetragen sind, auf **„Vorschläge als CSV“** klicken.  
+   → Es wird eine Datei mit allen vorgeschlagenen Fragen heruntergeladen.
+7. Diese Datei im GitHub-Repository hochladen:
+   - Im Repo auf den Ordner **`vorschlaege_neu`** klicken  
+   - Oben auf **„Add file → Upload files“**  
+   - Die CSV-Datei auswählen  
+   - Dateinamen z. B. `Vorschlaege_Vorname_YYYY-MM-DD.csv` wählen  
+   - Commit-Notiz eintragen (z. B. „Fragevorschläge Vorname 10.12.2025“)  
+   - **„Commit changes“** klicken
+
+Die eingegangenen Vorschläge werden später geprüft, fachlich angepasst und bei Eignung in den offiziellen Fragenpool übernommen.
+
+---
+
+### 2. Bewertungen aus dem Quiz exportieren und hochladen
+
+1. Das Quiz im Browser öffnen:  
+   `https://thecaptainlost.github.io/UOIA-Quiz/quiz_online.html`
+2. Fragen normal bearbeiten und bei Bedarf mit **👍 / 👎** bewerten.
+3. Unten auf **„Bewertungen als CSV“** klicken.  
+   → Es wird eine Datei heruntergeladen, z. B. `QuizBewertungen_YYYY-MM-DD.csv`.
+4. Diese Datei im GitHub-Repository hochladen:
+   - Im Repo auf den Ordner **`bewertungen_neu`** klicken  
+   - Oben auf **„Add file → Upload files“**  
+   - Die CSV-Datei auswählen  
+   - Dateinamen z. B. `Bewertungen_Vorname_YYYY-MM-DD.csv` wählen  
+   - Commit-Notiz eintragen (z. B. „Bewertungen Vorname 10.12.2025“)  
+   - **„Commit changes“** klicken
+
+Die Dateien werden später zentral in Excel ausgewertet (z. B. welche Fragen besonders viele 👎 erhalten haben).
+
+---
+
+### 3. Allgemeine Hinweise
+
+- Bitte **keine personenbezogenen Daten** in Fragen, Erläuterungen oder Dateinamen verwenden.  
+- Die zentrale Pflege und Auswertung des Fragenpools erfolgt später getrennt (Excel/CSV-Auswertung).  
+- Rückfragen oder Hinweise bitte an die Person richten, die das UOIA-Quiz betreut.
+
